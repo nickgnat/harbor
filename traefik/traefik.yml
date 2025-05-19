@@ -23,10 +23,13 @@ providers:
     exposedByDefault: false
     network: harbor_traefik-public
 
-certificatesResolvers:
-  letsencrypt:
-    acme:
-      email: "${HARBOR_TRAEFIK_CERT_EMAIL:-harbor@harbor.sh}"
-      storage: acme.json
-      httpChallenge:
-        entryPoint: web
+# certificatesResolvers:
+#   letsencrypt:
+#     acme:
+#       email: "${HARBOR_TRAEFIK_CERT_EMAIL:-harbor@harbor.sh}"
+#       storage: acme.json
+#       httpChallenge:
+#         entryPoint: web
+
+log:
+  level: DEBUG
