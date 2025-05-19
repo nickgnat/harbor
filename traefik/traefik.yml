@@ -30,6 +30,3 @@ providers:
 #       storage: acme.json
 #       httpChallenge:
 #         entryPoint: web
-
-log:
-  level: DEBUG
